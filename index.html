@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script type="module">
+        import '@polymer/polymer/lib/elements/custom-style.js';
         import '@whcg/whcg-general-styles/color.js';
         import '@whcg/whcg-general-styles/sizing.js';
         import '@whcg/whcg-general-styles/spacing.js';
@@ -16,12 +17,22 @@
     <style>
         :root {
 
-            /* text-field */
-            --parmaco-text-field-label-text-color: var(--lumo-error-color, yellow);
+            /* whcg-text-field */
+            --parmaco-text-field-label-text-color: var(--whcg-error-color, yellow);
+            --parmaco-text-field-h2-text-color: var(--hcolor, yellow);
         }
     </style>
+    <custom-style>
+            <style>
+              h2 {
+                /* Set a value for the custom CSS property --flex-direction */
+                color: orange;
+              }
+            </style>
+    </custom-style>
 </head>
 <body>
+    <h2>THIS IS BODY H2</h2>
     <whcg-lit-text-field></whcg-lit-text-field>
 </body>
 </html>
