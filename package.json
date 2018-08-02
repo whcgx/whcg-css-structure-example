@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@vaadin/vaadin-text-field": "^2.1.0-beta2",
+    "@whcg/whcg-general-styles": "^1.0.0",
+    "@whcg/whcg-lit-text-field": "^1.0.15"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
