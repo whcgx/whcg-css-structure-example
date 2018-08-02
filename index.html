@@ -18,21 +18,17 @@
         :root {
 
             /* whcg-text-field */
-            --parmaco-text-field-label-text-color: var(--whcg-error-color, yellow);
-            --parmaco-text-field-h2-text-color: var(--hcolor, yellow);
+
+            --whcg-text-field-input-field-background-color__dark: var(--parmaco-primary-color, yellow);
+
+
+
+            --whcg-text-field-input-field-background-color: var(--parmaco-error-color, yellow);
+            --whcg-text-field-input-field-text-color: var(--parmaco-success-color, green);
         }
     </style>
-    <custom-style>
-            <style>
-              h2 {
-                /* Set a value for the custom CSS property --flex-direction */
-                color: orange;
-              }
-            </style>
-    </custom-style>
 </head>
 <body>
-    <h2>THIS IS BODY H2</h2>
     <whcg-lit-text-field></whcg-lit-text-field>
 </body>
 </html>
