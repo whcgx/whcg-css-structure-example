@@ -98,6 +98,8 @@ html {
 
     --whcg-text-field-input-field-background-color: var(--parmaco-base-color-100pct);
 
+    --whcg-text-field-input-field-box-shadow: var(--whcg-box-shadow-l);
+
     --whcg-text-field-input-field-border-radius: var(--whcg-border-radius);
     --whcg-text-field-input-field-border-style: var(--parmaco-border-style);
     --whcg-text-field-input-field-border-width: var(--parmaco-border-width);
