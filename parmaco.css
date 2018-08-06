@@ -1,0 +1,119 @@
+html {
+
+    /* whcg-chip */
+    --whcg-chip-size: var(--parmaco-size-xs);
+    --whcg-chip-border-radius: calc(var(--whcg-chip-size) / 2);
+
+    --whcg-chip-host-font-family: var(--parmaco-font-family);
+    --whcg-chip-host-font-size: var(--parmaco-font-size-xs);
+    --whcg-chip-host-font-weight: var(--parmaco-font-weight-medium);
+    --whcg-chip-host-color: var(--parmaco-primary-color-100pct);
+    --whcg-chip-host-background-color: var(--parmaco-base-color-100pct);
+    --whcg-chip-host-border-radius: var(--whcg-chip-border-radius);
+    --whcg-chip-host-border-style: var(--parmaco-border-style);
+    --whcg-chip-host-border-width: var(--parmaco-border-width);
+    --whcg-chip-host-border-color: var(--parmaco-primary-color-100pct);
+
+    --whcg-chip-host-height: var(--whcg-chip-size);
+    --whcg-chip-host-min-width: calc(var(--whcg-chip-size) * 2);
+    --whcg-chip-host-padding-top: 0;
+    --whcg-chip-host-padding-bottom: 0;
+    --whcg-chip-host-padding-left: calc(var(--whcg-chip-size) / 3 + var(--whcg-chip-border-radius) / 2);
+    --whcg-chip-host-padding-right: calc(var(--whcg-chip-size) / 3 + var(--whcg-chip-border-radius) / 2);
+    
+    --whcg-chip-label-font-size: var(--parmaco-font-size-xs);
+    --whcg-chip-label-line-height: var(--parmaco-line-height-none);
+    --whcg-chip-label-padding-top: calc(var(--whcg-chip-size) / 6);
+    --whcg-chip-label-padding-bottom: calc(var(--whcg-chip-size) / 6);
+    --whcg-chip-label-padding-left: 0;
+    --whcg-chip-label-padding-right: 0;
+
+
+
+
+    /* whcg-button */
+    --whcg-button-size: var(--parmaco-size-m);
+    --whcg-button-border-radius: var(--parmaco-border-radius);
+
+    --whcg-button-host-font-family: var(--parmaco-font-family);
+    --whcg-button-host-font-size: var(--parmaco-font-size-m);
+    --whcg-button-host-font-weight: var(--parmaco-font-weight-medium);
+    --whcg-button-host-color: var(--parmaco-primary-color-100pct);
+    --whcg-button-host-background-color: var(--parmaco-base-color-100pct);
+    --whcg-button-host-border-radius: var(--whcg-button-border-radius);
+    --whcg-button-host-border-style: var(--parmaco-border-style);
+    --whcg-button-host-border-width: var(--parmaco-border-width);
+    --whcg-button-host-border-color: var(--parmaco-primary-color-100pct);
+
+    --whcg-button-host-height: var(--whcg-button-size);
+    --whcg-button-host-min-width: calc(var(--whcg-button-size) * 2);
+    --whcg-button-host-padding-top: 0;
+    --whcg-button-host-padding-bottom: 0;
+    --whcg-button-host-padding-left: calc(var(--whcg-button-size) / 3 + var(--whcg-button-border-radius) / 2);
+    --whcg-button-host-padding-right: calc(var(--whcg-button-size) / 3 + var(--whcg-button-border-radius) / 2);
+    
+    --whcg-button-label-font-size: var(--parmaco-font-size-m);
+    --whcg-button-label-line-height: var(--parmaco-line-height-none);
+    --whcg-button-label-padding-top: calc(var(--whcg-button-size) / 6);
+    --whcg-button-label-padding-bottom: calc(var(--whcg-button-size) / 6);
+    --whcg-button-label-padding-left: 0;
+    --whcg-button-label-padding-right: 0;
+
+
+
+
+    /* whcg-text-field */
+    --whcg-border-radius: var(--parmaco-border-radius);
+
+    --whcg-text-field-host-before-font-size: var(--parmaco-font-size-m);
+    --whcg-text-field-host-before-height: var(--parmaco-size-m);
+
+    --whcg-text-field-host-font-size: var(--parmaco-font-size-m);
+    --whcg-text-field-host-padding-top: var(--parmaco-space-xs);
+    --whcg-text-field-host-padding-bottom: var(--parmaco-space-xs);
+    --whcg-text-field-host-padding-left: 0;
+    --whcg-text-field-host-padding-right: 0;
+
+    --whcg-text-field-host-haslabel-padding-top: var(--parmaco-space-m);
+    --whcg-text-field-host-haslabel-padding-bottom: var(--parmaco-space-xs);
+    --whcg-text-field-host-haslabel-padding-left: 0;
+    --whcg-text-field-host-haslabel-padding-right: 0;
+
+    --whcg-text-field-label-font-size: var(--parmaco-font-size-s);
+    --whcg-text-field-label-font-weight: var(--parmaco-font-weight-medium);
+    --whcg-text-field-label-font-family: var(--parmaco-font-family);
+
+    --whcg-text-field-label-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-host-hover-not-focused-label-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-host-focused-label-color: var(--parmaco-primary-color-100pct);
+
+    --whcg-text-field-label-padding-top: 0;
+    --whcg-text-field-label-padding-bottom: 0.5em;
+    --whcg-text-field-label-padding-left: calc(var(--whcg-border-radius) / 4);
+    --whcg-text-field-label-padding-right: 1em;
+
+    --whcg-text-field-input-field-font-size: var(--parmaco-font-size-m);
+    --whcg-text-field-input-field-font-family: var(--parmaco-font-family);
+    --whcg-text-field-input-field-font-weight: var(--parmaco-font-weight-medium);
+
+    --whcg-text-field-input-field-background-color: var(--parmaco-base-color-100pct);
+
+    --whcg-text-field-input-field-border-radius: var(--whcg-border-radius);
+    --whcg-text-field-input-field-border-style: var(--parmaco-border-style);
+    --whcg-text-field-input-field-border-width: var(--parmaco-border-width);
+    --whcg-text-field-input-field-border-color: var(--parmaco-primary-color-100pct);
+
+    --whcg-text-field-input-field-padding-top: 0;
+    --whcg-text-field-input-field-padding-bottom: 0;
+    --whcg-text-field-input-field-padding-left: calc(0.375em + var(--whcg-border-radius) / 4 - 1px);
+    --whcg-text-field-input-field-padding-right: calc(0.375em + var(--whcg-border-radius) / 4 - 1px);
+
+    --whcg-text-field-value-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-value-placeholder-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-value-min-height: var(--parmaco-size-m);
+
+
+    --whcg-text-field-input-field-background-color__dark: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-label-color__dark: var(--parmaco-attention-color-100pct);
+    --whcg-text-field-value-color__dark: var(--parmaco-primary-contrast-color);
+}
