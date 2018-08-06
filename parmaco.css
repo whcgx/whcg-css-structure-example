@@ -4,16 +4,14 @@ html {
     --whcg-chip-size: var(--parmaco-size-xs);
     --whcg-chip-border-radius: calc(var(--whcg-chip-size) / 2);
 
-    --whcg-chip-host-font-family: var(--parmaco-font-family);
     --whcg-chip-host-font-size: var(--parmaco-font-size-xs);
-    --whcg-chip-host-font-weight: var(--parmaco-font-weight-medium);
     --whcg-chip-host-color: var(--parmaco-primary-color-100pct);
     --whcg-chip-host-background-color: var(--parmaco-base-color-100pct);
     --whcg-chip-host-border-radius: var(--whcg-chip-border-radius);
     --whcg-chip-host-border-style: var(--parmaco-border-style);
     --whcg-chip-host-border-width: var(--parmaco-border-width);
     --whcg-chip-host-border-color: var(--parmaco-primary-color-100pct);
-
+    
     --whcg-chip-host-height: var(--whcg-chip-size);
     --whcg-chip-host-min-width: calc(var(--whcg-chip-size) * 2);
     --whcg-chip-host-padding-top: 0;
@@ -22,6 +20,8 @@ html {
     --whcg-chip-host-padding-right: calc(var(--whcg-chip-size) / 3 + var(--whcg-chip-border-radius) / 2);
     
     --whcg-chip-label-font-size: var(--parmaco-font-size-xs);
+    --whcg-chip-label-font-weight: var(--parmaco-font-weight-medium);
+    --whcg-chip-label-font-family: var(--parmaco-font-family);
     --whcg-chip-label-line-height: var(--parmaco-line-height-none);
     --whcg-chip-label-padding-top: calc(var(--whcg-chip-size) / 6);
     --whcg-chip-label-padding-bottom: calc(var(--whcg-chip-size) / 6);
@@ -35,16 +35,14 @@ html {
     --whcg-button-size: var(--parmaco-size-m);
     --whcg-button-border-radius: var(--parmaco-border-radius);
 
-    --whcg-button-host-font-family: var(--parmaco-font-family);
     --whcg-button-host-font-size: var(--parmaco-font-size-m);
-    --whcg-button-host-font-weight: var(--parmaco-font-weight-medium);
     --whcg-button-host-color: var(--parmaco-primary-color-100pct);
     --whcg-button-host-background-color: var(--parmaco-base-color-100pct);
     --whcg-button-host-border-radius: var(--whcg-button-border-radius);
     --whcg-button-host-border-style: var(--parmaco-border-style);
     --whcg-button-host-border-width: var(--parmaco-border-width);
     --whcg-button-host-border-color: var(--parmaco-primary-color-100pct);
-
+    
     --whcg-button-host-height: var(--whcg-button-size);
     --whcg-button-host-min-width: calc(var(--whcg-button-size) * 2);
     --whcg-button-host-padding-top: 0;
@@ -53,6 +51,8 @@ html {
     --whcg-button-host-padding-right: calc(var(--whcg-button-size) / 3 + var(--whcg-button-border-radius) / 2);
     
     --whcg-button-label-font-size: var(--parmaco-font-size-m);
+    --whcg-button-label-font-family: var(--parmaco-font-family);
+    --whcg-button-label-font-weight: var(--parmaco-font-weight-medium);
     --whcg-button-label-line-height: var(--parmaco-line-height-none);
     --whcg-button-label-padding-top: calc(var(--whcg-button-size) / 6);
     --whcg-button-label-padding-bottom: calc(var(--whcg-button-size) / 6);
