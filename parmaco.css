@@ -1,6 +1,6 @@
 html {
 
-    /* whcg-chip */
+    /* WHCG-CHIP */
     --whcg-chip-size: var(--parmaco-size-xs);
     --whcg-chip-border-radius: calc(var(--whcg-chip-size) / 2);
 
@@ -31,7 +31,7 @@ html {
 
 
 
-    /* whcg-button */
+    /* WHCG-BUTTON */
     --whcg-button-size: var(--parmaco-size-m);
     --whcg-button-border-radius: var(--parmaco-border-radius);
 
@@ -62,7 +62,7 @@ html {
 
 
 
-    /* whcg-text-field */
+    /* WHCG-TEXT-FIELD */
     --whcg-border-radius: var(--parmaco-border-radius);
 
     --whcg-text-field-host-before-font-size: var(--parmaco-font-size-m);
@@ -84,7 +84,7 @@ html {
     --whcg-text-field-label-font-family: var(--parmaco-font-family);
 
     --whcg-text-field-label-color: var(--parmaco-primary-color-100pct);
-    --whcg-text-field-host-hover-not-focused-label-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-label-host-hover-not-focused-color: var(--parmaco-primary-color-100pct);
     --whcg-text-field-host-focused-label-color: var(--parmaco-primary-color-100pct);
 
     --whcg-text-field-label-padding-top: 0;
@@ -98,7 +98,7 @@ html {
 
     --whcg-text-field-input-field-background-color: var(--parmaco-base-color-100pct);
 
-    --whcg-text-field-input-field-box-shadow: var(--whcg-box-shadow-l);
+    --whcg-text-field-input-field-host__shadow-box-shadow: var(--whcg-box-shadow-l);
 
     --whcg-text-field-input-field-border-radius: var(--whcg-border-radius);
     --whcg-text-field-input-field-border-style: var(--parmaco-border-style);
@@ -115,7 +115,8 @@ html {
     --whcg-text-field-value-min-height: var(--parmaco-size-m);
 
 
-    --whcg-text-field-input-field-background-color__dark: var(--parmaco-primary-color-100pct);
-    --whcg-text-field-label-color__dark: var(--parmaco-attention-color-100pct);
-    --whcg-text-field-value-color__dark: var(--parmaco-primary-contrast-color);
+    /* dark theme */
+    --whcg-text-field-input-field-host__dark-background-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-label-host__dark-color: var(--parmaco-attention-color-100pct);
+    --whcg-text-field-value-host__dark-color: var(--parmaco-primary-contrast-color);
 }
