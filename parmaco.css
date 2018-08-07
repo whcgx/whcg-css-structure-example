@@ -27,6 +27,15 @@ html {
     --whcg-tab-host-before-background-color: var(--parmaco-primary-color-100pct);
     --whcg-tab-host-before-border-radius: 0 var(--parmaco-border-radius) var(--parmaco-border-radius) 0;
 
+    /* CHECKBOX */
+
+    --whcg-checkbox-checkbox-border-radius: var(--parmaco-border-radius);
+    --whcg-checkbox-checkbox-background-color: var(--parmaco-primary-color-50pct);
+    --whcg-checkbox-checkbox-host-checked-background-color: var(--parmaco-primary-color-70pct);
+    --whcg-checkbox-checkbox-host-not-disabled-hover-background-color: var(--parmaco-primary-color-80pct);
+    --whcg-checkbox-checkbox-host-disabled-background-color: var(--whcg-shade-10pct);
+    --whcg-checkbox-host-disabled-color: var(--whcg-shade-40pct);
+    --whcg-checkbox-checkbox-after-checkmark-color: var(--parmaco-primary-contrast-color);
 
 
     /* WHCG-CHIP */
