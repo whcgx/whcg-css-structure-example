@@ -1,4 +1,12 @@
 html {
+    /* CHECKBOX */
+
+    --whcg-checkbox-checkbox-border-radius: var(--parmaco-border-radius);
+    --whcg-checkbox-checkbox-background-color: var(--whcg-shade-30pct);
+    --whcg-checkbox-checkbox-host-checked-background-color: var(--whcg-shade-60pct);
+    --whcg-checkbox-checkbox-host-not-disabled-hover-background-color: var(--whcg-shade-100pct);
+    --whcg-checkbox-checkbox-host-focus-ring-box-shadow: var(--parmaco-attention-color-100pct);
+
 
     /* WHCG-CHIP */
     --whcg-chip-size: var(--parmaco-size-xs);
