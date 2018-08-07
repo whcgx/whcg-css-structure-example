@@ -49,6 +49,26 @@ html {
     
     --whcg-checkbox-label-host-disabled-color: var(--whcg-shade-40pct);
     
+    /* RADIO-BUTTON */
+
+    /* radio */
+    --whcg-radio-button-radio-font-size: var(--parmaco-font-size-m);
+    --whcg-radio-button-radio-background-color: var(--parmaco-primary-color-50pct);
+    --whcg-radio-button-radio-host-not-disabled-not-checked-hover-background-color: var(--parmaco-primary-color-40pct);
+    --whcg-radio-button-radio-host-not-disabled-hover-background-color: var(--parmaco-primary-color-40pct);
+    --whcg-radio-button-radio-host-checked-background-color: var(--parmaco-primary-color-70pct);
+    --whcg-radio-button-radio-host-disabled-background-color: var(--whcg-shade-10pct);
+
+    /* check mark */
+    --whcg-radio-button-radio-after-checkmark-color: var(--parmaco-primary-contrast-color);
+    
+    /* label */
+    --whcg-radio-button-label-font-size: var(--parmaco-font-size-m);
+    --whcg-radio-button-label-font-family: var(--parmaco-font-family);
+    --whcg-radio-button-label-color: var(--parmaco-primary-color-100pct);
+
+    --whcg-radio-button-label-host-disabled-color: var(--whcg-shade-40pct);
+
 
     /* WHCG-CHIP */
     --whcg-chip-size: var(--parmaco-size-xs);
