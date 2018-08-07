@@ -82,7 +82,7 @@ html {
 
     /* label */
     --whcg-checkbox-label-font-size: var(--parmaco-font-size-m);
-    --whcg-checkbox-label-not-empty-color: var(--parmaco-primary-color-70pct);
+    --whcg-checkbox-label-color: var(--parmaco-primary-color-70pct);
     
     --whcg-checkbox-label-host-disabled-color: var(--whcg-shade-40pct);
     
