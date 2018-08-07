@@ -2,10 +2,12 @@ html {
     /* CHECKBOX */
 
     --whcg-checkbox-checkbox-border-radius: var(--parmaco-border-radius);
-    --whcg-checkbox-checkbox-background-color: var(--whcg-shade-30pct);
-    --whcg-checkbox-checkbox-host-checked-background-color: var(--whcg-shade-60pct);
-    --whcg-checkbox-checkbox-host-not-disabled-hover-background-color: var(--whcg-shade-100pct);
-    
+    --whcg-checkbox-checkbox-background-color: var(--parmaco-primary-color-50pct);
+    --whcg-checkbox-checkbox-host-checked-background-color: var(--parmaco-primary-color-70pct);
+    --whcg-checkbox-checkbox-host-not-disabled-hover-background-color: var(--parmaco-primary-color-80pct);
+    --whcg-checkbox-checkbox-host-disabled-background-color: var(--whcg-shade-10pct);
+    --whcg-checkbox-host-disabled-color: var(--whcg-shade-40pct);
+    --whcg-checkbox-checkbox-after-checkmark-color: var(--parmaco-primary-contrast-color);
 
 
     /* WHCG-CHIP */
