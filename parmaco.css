@@ -29,14 +29,26 @@ html {
 
     /* CHECKBOX */
 
+    /* checkbox */
+    --whcg-checkbox-checkbox-font-size: var(--parmaco-font-size-m);
+    --whcg-checkbox-label-font-family: var(--parmaco-font-family);
+    --whcg-checkbox-label-font-weight: var(--parmaco-font-weight);
     --whcg-checkbox-checkbox-border-radius: var(--parmaco-border-radius);
     --whcg-checkbox-checkbox-background-color: var(--parmaco-primary-color-50pct);
-    --whcg-checkbox-checkbox-host-checked-background-color: var(--parmaco-primary-color-70pct);
+    
     --whcg-checkbox-checkbox-host-not-disabled-hover-background-color: var(--parmaco-primary-color-80pct);
+    --whcg-checkbox-checkbox-host-checked-background-color: var(--parmaco-primary-color-70pct);
     --whcg-checkbox-checkbox-host-disabled-background-color: var(--whcg-shade-10pct);
-    --whcg-checkbox-host-disabled-color: var(--whcg-shade-40pct);
+    
+    /* check mark */
     --whcg-checkbox-checkbox-after-checkmark-color: var(--parmaco-primary-contrast-color);
 
+    /* label */
+    --whcg-checkbox-label-font-size: var(--parmaco-font-size-m);
+    --whcg-checkbox-label-not-empty-color: var(--parmaco-primary-color-70pct);
+    
+    --whcg-checkbox-label-host-disabled-color: var(--whcg-shade-40pct);
+    
 
     /* WHCG-CHIP */
     --whcg-chip-size: var(--parmaco-size-xs);
