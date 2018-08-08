@@ -19,6 +19,7 @@
         import '@whcg/whcg-lit-tab';
         import '@whcg/whcg-lit-checkbox';
         import '@whcg/whcg-lit-list-box';
+        import '@whcg/whcg-lit-text-field';
         import '@whcg/whcg-lit-select';
         import '@whcg/whcg-test-button';
         import '@whcg/whcg-button';
@@ -26,6 +27,7 @@
         import '@whcg/whcg-number-field';
         import '@whcg/whcg-search-box';
         import '@whcg/whcg-button-box';
+        import '@whcg/whcg-select';
         import '@whcg/whcg-header';
         import '@vaadin/vaadin-dropdown-menu';
         import '@vaadin/vaadin-list-box';
@@ -82,8 +84,38 @@
 
         }
 
+        .mainleft {
+            display: grid;
+            grid-template-columns: repeat(2, [col-start] 1fr);
+            grid-gap: 20px;
+            grid-column: col-start 2 / span 2;
+        }
+
+        .mainright {
+            display: grid;
+            grid-template-columns: repeat(8, [col-start] 1fr);
+            grid-gap: 20px;
+            grid-column: col-start 4 / span 8;
+        }
+
+
         whcg-lit-tab {
-            grid-column: col-start 2 / span 4;
+            grid-column: col-start 1 / span 2;
+        }
+
+        .headline {
+            grid-column: col-start 1 / span 8;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-xxxl);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .ingress {
+            grid-column: col-start 1 / span 8;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-m);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
         }
     </style>
 
@@ -93,14 +125,28 @@
     <whcg-lit-checkbox></whcg-lit-checkbox>
     <whcg-lit-radio-button></whcg-lit-radio-button>
     <whcg-lit-list-box></whcg-lit-list-box>
-    <whcg-lit-select></whcg-lit-select> 
+    
     <whcg-test-button>test-button</whcg-test-button> -->
     <div class="wrapper">
         <div class="left"></div>
         <div class="container">
             <whcg-header></whcg-header>
             <div class="main">
-                <whcg-lit-tab></whcg-lit-tab>
+                    <div class="mainleft">
+                        <whcg-lit-tab></whcg-lit-tab>
+                    </div>
+                
+                <div class="mainright">
+                    <div class="headline">
+                        GRUNDLÄGGANDE KALKYLDATA
+                    </div>
+                    <div class="ingress">
+                        Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
+                    </div>
+                    <whcg-lit-select></whcg-lit-select> 
+
+                </div>
+                
             </div>
             
             <!-- <whcg-button>whcg-button</whcg-button>

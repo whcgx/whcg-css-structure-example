@@ -21,8 +21,8 @@ html {
     --whcg-item-content-font-family: var(--parmaco-font-family);
     --whcg-item-content-font-size: var(--parmaco-font-size-m);
     --whcg-item-content-line-height: var(--parmaco-line-height-xs);
-    --whcg-item-content-color: var(--parmaco-attention-color-100pct);
-    --whcg-item-content-host-selected-color: var(--parmaco-black-color-100pct);
+    --whcg-item-content-color: var(--parmaco-black-color-50pct);
+    --whcg-item-content-host-selected-color: var(--parmaco-attention-color-100pct);
     --whcg-item-content-host-disabled-color: var(--parmaco-black-color-30pct);
     
 
@@ -55,18 +55,22 @@ html {
 
     /* Divider */
     --whcg-tabs-host-box-shadow: var(--parmaco-divider-left);
+    --whcg-tabs-host-padding-top: 1em;
+    --whcg-tabs-host-padding-bottom: 1em;
+    --whcg-tabs-host-padding-left: 0;
+    --whcg-tabs-host-padding-right: 0;
     
 
     /* WHCG-TAB */
-    --whcg-tab-host-font-size: var(--parmaco-font-size-m);
+    --whcg-tab-host-font-size: var(--parmaco-font-size-s);
     --whcg-tab-host-font-family: var(--parmaco-font-family);
     --whcg-tab-host-font-weight: var(--parmaco-font-weight-medium);
     --whcg-tab-host-line-height: var(--parmaco-line-height-m);
     --whcg-tab-host-color: var(--parmaco-base-color-100pct);
 
     --whcg-tab-host-min-height: var(--parmaco-size-m);
-    --whcg-tab-host-padding-top: .25em;
-    --whcg-tab-host-padding-bottom: .25em;
+    --whcg-tab-host-padding-top: .3em;
+    --whcg-tab-host-padding-bottom: .3em;
     --whcg-tab-host-padding-left: 1em;
     --whcg-tab-host-padding-right: 1em;
 
@@ -200,14 +204,15 @@ html {
     --whcg-text-field-host-haslabel-padding-bottom: var(--parmaco-space-xs);
     --whcg-text-field-host-haslabel-padding-left: 0;
     --whcg-text-field-host-haslabel-padding-right: 0;
+    
 
     --whcg-text-field-label-font-size: var(--parmaco-font-size-s);
     --whcg-text-field-label-font-weight: var(--parmaco-font-weight-medium);
     --whcg-text-field-label-font-family: var(--parmaco-font-family);
 
-    --whcg-text-field-label-color: var(--parmaco-primary-color-100pct);
-    --whcg-text-field-label-host-hover-not-focused-color: var(--parmaco-primary-color-100pct);
-    --whcg-text-field-host-focused-label-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-label-color: var(--parmaco-base-color-100pct);
+    --whcg-text-field-label-host-hover-not-focused-color: var(--parmaco-base-color-100pct);
+    --whcg-text-field-host-focused-label-color: var(--parmaco-base-color-100pct);
 
     --whcg-text-field-label-padding-top: 0;
     --whcg-text-field-label-padding-bottom: 0.5em;
@@ -218,22 +223,23 @@ html {
     --whcg-text-field-input-field-font-family: var(--parmaco-font-family);
     --whcg-text-field-input-field-font-weight: var(--parmaco-font-weight-medium);
 
-    --whcg-text-field-input-field-background-color: var(--parmaco-base-color-100pct);
+    --whcg-text-field-input-field-background-color: var(--parmaco-transparent);
 
     --whcg-text-field-input-field-host__shadow-box-shadow: var(--whcg-box-shadow-l);
 
     --whcg-text-field-input-field-border-radius: var(--whcg-border-radius);
     --whcg-text-field-input-field-border-style: var(--parmaco-border-style);
     --whcg-text-field-input-field-border-width: var(--parmaco-border-width);
-    --whcg-text-field-input-field-border-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-input-field-border-color: var(--parmaco-base-color-100pct);
 
     --whcg-text-field-input-field-padding-top: 0;
     --whcg-text-field-input-field-padding-bottom: 0;
     --whcg-text-field-input-field-padding-left: calc(0.375em + var(--whcg-border-radius) / 4 - 1px);
     --whcg-text-field-input-field-padding-right: calc(0.375em + var(--whcg-border-radius) / 4 - 1px);
 
-    --whcg-text-field-value-color: var(--parmaco-primary-color-100pct);
-    --whcg-text-field-value-placeholder-color: var(--parmaco-primary-color-100pct);
+    --whcg-text-field-value-color: var(--parmaco-base-color-100pct);
+   
+    --whcg-text-field-value-placeholder-color: var(--parmaco-base-color-100pct);
     --whcg-text-field-value-min-height: var(--parmaco-size-m);
 
 

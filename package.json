@@ -18,7 +18,8 @@
     "@whcg/whcg-general-styles": "^1.0.0",
     "@whcg/whcg-lit-text-field": "^1.0.15",
     "@whcg/whcg-number-field": "^1.0.9",
-    "@whcg/whcg-search-box": "^1.0.0"
+    "@whcg/whcg-search-box": "^1.0.0",
+    "@whcg/whcg-select": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
