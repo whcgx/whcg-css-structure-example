@@ -17,7 +17,7 @@
     "@whcg/whcg-chip": "^1.0.2",
     "@whcg/whcg-general-styles": "^1.0.0",
     "@whcg/whcg-lit-text-field": "^1.0.15",
-    "@whcg/whcg-number-field": "^1.0.5"
+    "@whcg/whcg-number-field": "^1.0.7"
   },
   "devDependencies": {},
   "scripts": {
