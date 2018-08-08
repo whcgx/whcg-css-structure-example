@@ -1,4 +1,7 @@
 html {
+
+    
+
     /* WHCG-ITEM */
 
     --whcg-item-host-font-size: var(--parmaco-font-size-m);
@@ -23,7 +26,19 @@ html {
     --whcg-item-content-host-disabled-color: var(--parmaco-black-color-30pct);
     
 
+    /* WHCG-DROPDOWN */
+    --whcg-dropdown-content-padding: var(--parmaco-space-xs);
 
+    --whcg-dropdown-button-hover-color: var(--parmaco-icon-size-m);
+
+    --whcg-dropdown-overlay-background-color: var(--parmaco-base-color);
+    --whcg-dropdown-overlay-background-image: linear-gradient(var(--whcg-tint-5pct), var(--whcg-tint-5pct));
+    --whcg-dropdown-overlay-border-radius: var(--parmaco-border-radius);
+    --whcg-dropdown-overlay-box-shadow: 0 0 0 1px var(--whcg-shade-5pct), var(--whcg-box-shadow-m);
+    
+    --whcg-dropdown-backdrop-background-color: var(--whcg-shade-20pct);
+
+    
     /* WHCG-LIST-BOX */
 
     /* slotted items */
