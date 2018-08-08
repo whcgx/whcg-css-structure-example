@@ -25,23 +25,94 @@
         import '@whcg/whcg-chip';
         import '@whcg/whcg-number-field';
         import '@whcg/whcg-search-box';
+        import '@whcg/whcg-button-box';
+        import '@whcg/whcg-header';
         import '@vaadin/vaadin-dropdown-menu';
         import '@vaadin/vaadin-list-box';
         import '@vaadin/vaadin-item';
     </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1440px 1fr;
+            background: linear-gradient(to bottom, #005F9A 100px,#005F9A 0%,#63D1F4 100%);
+            min-height: 100vh;
+        }
+
+        .left {
+            grid-column: 1;
+        }
+
+        .container {
+            grid-column: 2;
+        }
+
+        .right {
+            grid-column: 3;
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .wrapper {
+            display: grid;
+            grid-template-columns: 0px 1fr 0px;
+            }
+
+            .left {
+                grid-column: 1;
+            }
+
+            .container {
+                grid-column: 2;
+            }
+
+            .right {
+                grid-column: 3;
+            }
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(12, [col-start] 1fr);
+            grid-gap: 20px;
+
+        }
+
+        whcg-lit-tab {
+            grid-column: col-start 2 / span 4;
+        }
+    </style>
 
 </head>
 <body>
-    <!-- <whcg-lit-tab></whcg-lit-tab>
+    <!-- 
     <whcg-lit-checkbox></whcg-lit-checkbox>
     <whcg-lit-radio-button></whcg-lit-radio-button>
     <whcg-lit-list-box></whcg-lit-list-box>
     <whcg-lit-select></whcg-lit-select> 
     <whcg-test-button>test-button</whcg-test-button> -->
-    <whcg-button>whcg-button</whcg-button>
-    <whcg-chip>whcg-chip</whcg-chip>
-    <whcg-number-field label="thelabel" placeholder="theplaceholder"></whcg-number-field>
-    <whcg-search-box></whcg-search-box>
+    <div class="wrapper">
+        <div class="left"></div>
+        <div class="container">
+            <whcg-header></whcg-header>
+            <div class="main">
+                <whcg-lit-tab></whcg-lit-tab>
+            </div>
+            
+            <!-- <whcg-button>whcg-button</whcg-button>
+            <whcg-chip>whcg-chip</whcg-chip>
+            <whcg-number-field label="thelabel" placeholder="theplaceholder"></whcg-number-field>
+            <whcg-search-box></whcg-search-box>
+            <whcg-button-box></whcg-button-box> -->
+            
+        </div>
+        <div class="right"></div>
+    </div>
+    
 
 </body>
 </html>

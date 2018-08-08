@@ -62,7 +62,7 @@ html {
     --whcg-tab-host-font-family: var(--parmaco-font-family);
     --whcg-tab-host-font-weight: var(--parmaco-font-weight-medium);
     --whcg-tab-host-line-height: var(--parmaco-line-height-m);
-    --whcg-tab-host-color: var(--parmaco-black-color-60pct);
+    --whcg-tab-host-color: var(--parmaco-base-color-100pct);
 
     --whcg-tab-host-min-height: var(--parmaco-size-m);
     --whcg-tab-host-padding-top: .25em;
@@ -70,13 +70,13 @@ html {
     --whcg-tab-host-padding-left: 1em;
     --whcg-tab-host-padding-right: 1em;
 
-    --whcg-tab-host-hover-color: var(--parmaco-attention-color-100pct);
-    --whcg-tab-host-selected-color: var(--parmaco-black-text-color);
-    --whcg-tab-host-disabled-color: var(--parmaco-black-color-30pct);
+    --whcg-tab-host-hover-color: var(--parmaco-base-color-100pct);
+    --whcg-tab-host-selected-color: var(--parmaco-base-color-100pct);
+    --whcg-tab-host-disabled-color: var(--parmaco-base-color-100pct);
 
     /* Selector */
     --whcg-tab-host-before-height: var(--parmaco-size-xs);
-    --whcg-tab-host-before-background-color: var(--parmaco-primary-color-100pct);
+    --whcg-tab-host-before-background-color: var(--parmaco-attention-color-100pct);
     --whcg-tab-host-before-border-radius: 0 var(--parmaco-border-radius) var(--parmaco-border-radius) 0;
 
     /* CHECKBOX */
@@ -158,12 +158,12 @@ html {
     --whcg-button-border-radius: var(--parmaco-border-radius);
 
     --whcg-button-host-font-size: var(--parmaco-font-size-m);
-    --whcg-button-host-color: var(--parmaco-primary-color-100pct);
-    --whcg-button-host-background-color: var(--parmaco-base-color-100pct);
+    --whcg-button-host-color: var(--parmaco-base-color-100pct);
+    --whcg-button-host-background-color: var(--parmaco-transparent);
     --whcg-button-host-border-radius: var(--whcg-button-border-radius);
     --whcg-button-host-border-style: var(--parmaco-border-style);
     --whcg-button-host-border-width: var(--parmaco-border-width);
-    --whcg-button-host-border-color: var(--parmaco-primary-color-100pct);
+    --whcg-button-host-border-color: var(--parmaco-base-color-100pct);
     
     --whcg-button-host-height: var(--whcg-button-size);
     --whcg-button-host-min-width: calc(var(--whcg-button-size) * 2);
