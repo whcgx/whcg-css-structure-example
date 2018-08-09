@@ -117,6 +117,135 @@
             font-weight: var(--parmaco-font-weight-normal);
             color: var(--parmaco-base-color-100pct);
         }
+
+        .select {
+            grid-column: col-start 1 / span 3;
+            
+        }
+
+        .selectexplain {
+            padding-top: 31px;
+            grid-column: col-start 4 / span 5;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-m);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+
+        .selectandexplainwrapper {
+            padding-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(8, [col-start] 1fr);
+            grid-gap: 20px;
+            grid-column: col-start 1 / span 8;
+        }
+
+        .selectandexplain {
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(8, [col-start] 1fr);
+            grid-gap: 20px;
+            grid-column: col-start 1 / span 8;
+        }
+        .footer {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            display: grid;
+            grid-template-columns: repeat(12, [col-start] 1fr);
+            grid-gap: 20px;
+        }
+        .about {
+            display: grid;
+            grid-template-columns: repeat(4, [col-start] 1fr);
+            grid-template-rows: 20px auto;
+            grid-column: col-start 2 / span 4;
+            justify-self: start;
+        }
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(2, [col-start] 1fr);
+            grid-template-rows: 20px auto auto;
+            grid-column: col-start 7 / span 2;
+        }
+        .newsletter {
+            display: grid;
+            grid-template-columns: repeat(3, [col-start] 1fr);
+            grid-template-rows: 20px auto auto;
+            
+            grid-column: col-start 9 / span 3;
+            justify-self: end;
+        }
+        .aboutheadline {
+
+            grid-column: col-start 1 / span 1;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-m);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .aboutexplain {
+            padding-top: 30px;
+            grid-column: col-start 1 / span 4;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-xs);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .contactheadline {
+            grid-column: col-start 1 / span 1;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-m);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .contactsub {
+            padding-top: 16px;
+            grid-column: col-start 1 / span 2;
+        }
+        .contactsubhedline {
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-xs);
+            font-weight: var(--parmaco-font-weight-bold);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .contactsubexplain {
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-xs);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .newsletterheadline {
+            grid-column: col-start 1 / span 3;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-m);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .newslettersub {
+            display: grid;
+            grid-template-columns: repeat(3, [col-start] 1fr);
+            padding-top: 16px;
+            grid-column: col-start 1 / span 3;
+        }
+        .newslettersubhedline {
+            grid-column: col-start 1 / span 3;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-xs);
+            font-weight: var(--parmaco-font-weight-bold);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .newslettersubexplain {
+            grid-column: col-start 1 / span 3;
+            font-family: var(--parmaco-font-family);
+            font-size: var(--parmaco-font-size-xs);
+            font-weight: var(--parmaco-font-weight-normal);
+            color: var(--parmaco-base-color-100pct);
+        }
+        .newslettersearchbox {
+            grid-column: col-start 1 / span 3;
+            justify-self: end;
+        }
+       
     </style>
 
 </head>
@@ -137,16 +266,98 @@
                     </div>
                 
                 <div class="mainright">
+                    
                     <div class="headline">
                         GRUNDLÄGGANDE KALKYLDATA
                     </div>
                     <div class="ingress">
                         Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
                     </div>
-                    <whcg-lit-select></whcg-lit-select> 
+                    <div class="selectandexplainwrapper">
+                        <div class="selectandexplain">
+                            <whcg-lit-select class="select"></whcg-lit-select> 
+                            <div class="selectexplain">
+                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
+                            </div>
+                        </div>
+    
+                        <div class="selectandexplain">
+                            <whcg-lit-select class="select"></whcg-lit-select> 
+                            <div class="selectexplain">
+                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
+                            </div>
+                        </div>
 
+                        <div class="selectandexplain">
+                            <whcg-lit-select class="select"></whcg-lit-select> 
+                            <div class="selectexplain">
+                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
+                            </div>
+                        </div>
+                        <div class="selectandexplain">
+                            <whcg-lit-select class="select"></whcg-lit-select> 
+                            <div class="selectexplain">
+                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
+            </div>
+            <div class="footer">
+                <div class="about">
+                    <div class="aboutheadline">
+                        OM MODELLEN
+                    </div>
+                    <div class="aboutexplain">
+                        Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermen
+                        Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermen
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contactheadline">
+                    KONTAKTA OSS
+                    </div>
+
+                    <div class="contactsub">
+                        <div class="contactsubhedline">
+                            Information
+                        </div>
+                        <div class="contactsubexplain">
+                            08-783 24 12
+                            info@parmaco.se
+                        </div>
+                    </div>
+
+                    <div class="contactsub">
+                        <div class="contactsubhedline">
+                            Support
+                        </div>
+                        <div class="contactsubexplain">
+                            08-783 24 12
+                            support@parmaco.se
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <div class="newsletterheadline">
+                            TA DEL AV VÅRAT NYHETSBREV
+                    </div>
+
+                    <div class="newslettersub">
+                        <div class="newslettersubhedline">
+                            Information
+                        </div>
+                        <div class="newslettersubexplain">
+                            Få den senaste informationen om utvecklingen på marknaden för hyrda skollokaler
+                        </div>
+                    </div>
+
+                    <div class="newslettersub">
+                        <whcg-search-box class="newslettersearchbox">
+                        </whcg-search-box>
+                    </div>
+                </div>
             </div>
             
             <!-- <whcg-button>whcg-button</whcg-button>
