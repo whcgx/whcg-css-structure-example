@@ -7,8 +7,33 @@
     <link rel="stylesheet" href="parmaco.css">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./parmaco.css">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  
+
+  <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script type="module">
         import '@polymer/polymer/lib/elements/custom-style.js';
+        import '@polymer/polymer/lib/elements/dom-bind.js'; 
+        import '@polymer/polymer/lib/elements/dom-module.js'; 
+        import '@polymer/polymer/lib/elements/dom-if.js'; 
+        import '@polymer/paper-button/paper-button.js';
+        import '@polymer/iron-pages/iron-pages.js'; 
+        import '@polymer/iron-ajax/iron-ajax.js'; 
+        import '@polymer/iron-selector/iron-selector.js';
+        import '@polymer/app-route/app-route.js'; 
+        import '@polymer/app-route/app-location.js'; 
+        import '@polymer/app-layout/app-drawer/app-drawer.js';
+        import '@polymer/app-layout/app-drawer-layout/app-drawer-layout.js'; 
+        import '@polymer/app-layout/app-header/app-header.js';
+        import '@polymer/app-layout/app-header-layout/app-header-layout.js'; 
+        import '@polymer/app-layout/app-scroll-effects/app-scroll-effects.js';
+        import '@polymer/app-layout/app-toolbar/app-toolbar.js'; 
         import '@whcg/whcg-general-styles/color.js';
         import '@whcg/whcg-general-styles/sizing.js';
         import '@whcg/whcg-general-styles/spacing.js';
@@ -30,10 +55,45 @@
         import '@whcg/whcg-button-box';
         import '@whcg/whcg-select';
         import '@whcg/whcg-header';
+        import '@whcg/whcg-box-container'; 
+        import '@whcg/whcg-chart'; 
+        import '@whcg/whcg-chart-feeder';
+        import '@whcg/whcg-grid'; 
+        import '@whcg/whcg-json-merger'; 
+        import '@whcg/whcg-login-check'; 
+        import '@whcg/whcg-login-fields';
+        import '@whcg/whcg-period-summarizer';
+        import '@whcg/whcg-period-discounter';
+        
+        import '@whcg/whcg-number-field-box'; 
+        import '@whcg/whcg-period-compounder';
+        import '@whcg/whcg-period-amplifier';
+        import '@whcg/whcg-multiplier';
+        import '@whcg/whcg-json-maker';
+        import '@whcg/whcg-app';
         import '@vaadin/vaadin-dropdown-menu';
         import '@vaadin/vaadin-list-box';
         import '@vaadin/vaadin-item';
+        import '@vaadin/vaadin-button/vaadin-button.js'; 
+        import '@vaadin/vaadin-grid/vaadin-grid-column.js';
+        import '@vaadin/vaadin-grid/vaadin-grid.js';
+        import '@vaadin/vaadin-text-field/vaadin-text-field.js';
+        import '@vaadin/vaadin-tabs/vaadin-tabs.js';
+        import '@vaadin/vaadin-tabs/vaadin-tab.js';
     </script>
+    <style>
+        body {
+          --app-primary-color: #4285f4;
+          --app-secondary-color: black;
+          display: block;
+          font-family: 'Roboto', sans-serif;
+        }
+    
+        app-header {
+          color: #fff;
+          background-color: var(--app-primary-color);
+        }
+      </style>
     <style>
         body {
             margin: 0;
@@ -255,126 +315,14 @@
 
 </head>
 <body>
+        <whcg-app></whcg-app>
     <!-- 
     <whcg-lit-checkbox></whcg-lit-checkbox>
     <whcg-lit-radio-button></whcg-lit-radio-button>
     <whcg-lit-list-box></whcg-lit-list-box>
     
     <whcg-test-button>test-button</whcg-test-button> -->
-    <div class="wrapper">
-        <div class="left"></div>
-        <div class="container">
-            <whcg-header></whcg-header>
-            <div class="main">
-                    <div class="mainleft">
-                        <whcg-lit-tab></whcg-lit-tab>
-                    </div>
-                
-                <div class="mainright">
-                    
-                    <div class="headline">
-                        GRUNDLÄGGANDE KALKYLDATA
-                    </div>
-                    <div class="ingress">
-                        Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
-                    </div>
-                    <div class="selectandexplainwrapper">
-                        <div class="selectandexplain">
-                            <whcg-lit-select class="select"></whcg-lit-select> 
-                            <div class="selectexplain">
-                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
-                            </div>
-                        </div>
     
-                        <div class="selectandexplain">
-                            <whcg-lit-select class="select"></whcg-lit-select> 
-                            <div class="selectexplain">
-                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
-                            </div>
-                        </div>
-                        
-                        <div class="selectandexplain">
-                            <whcg-lit-select class="select"></whcg-lit-select> 
-                            <div class="selectexplain">
-                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
-                            </div>
-                        </div>
-                        <div class="selectandexplain">
-                            <whcg-lit-select class="select"></whcg-lit-select> 
-                            <div class="selectexplain">
-                                Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermentum dolor pulvinar tempus blandit. Cras aliquam lectus ut dolor ornare aliquam. Curabitur lobortis ut nibh in sollicitudin. In viverra facilisis magna, a tempus lorem dictum at. Ut porta vehicula lacus, nec mollis libero rutrum id. Aliquam quis tristique risus.
-                            </div>
-                        </div>
-                    </div>
-                    <whcg-lit-grid class="grid"></whcg-lit-grid> 
-                </div>
-                
-            </div>
-            <div class="footer">
-                <div class="about">
-                    <div class="aboutheadline">
-                        OM MODELLEN
-                    </div>
-                    <div class="aboutexplain">
-                        Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermen
-                        Pellentesque sit amet nisl odio. Duis erat libero, placerat vitae mi at, bibendum porta nisi. Proin fermentum mi et nibh sollicitudin, in interdum mauris molestie. Aliquam fermen
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="contactheadline">
-                    KONTAKTA OSS
-                    </div>
-
-                    <div class="contactsub">
-                        <div class="contactsubhedline">
-                            Information
-                        </div>
-                        <div class="contactsubexplain">
-                            08-783 24 12
-                            info@parmaco.se
-                        </div>
-                    </div>
-
-                    <div class="contactsub">
-                        <div class="contactsubhedline">
-                            Support
-                        </div>
-                        <div class="contactsubexplain">
-                            08-783 24 12
-                            support@parmaco.se
-                        </div>
-                    </div>
-                </div>
-                <div class="newsletter">
-                    <div class="newsletterheadline">
-                            TA DEL AV VÅRAT NYHETSBREV
-                    </div>
-
-                    <div class="newslettersub">
-                        <div class="newslettersubhedline">
-                            Information
-                        </div>
-                        <div class="newslettersubexplain">
-                            Få den senaste informationen om utvecklingen på marknaden för hyrda skollokaler
-                        </div>
-                    </div>
-
-                    <div class="newslettersub">
-                        <whcg-search-box class="newslettersearchbox">
-                        </whcg-search-box>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- <whcg-button>whcg-button</whcg-button>
-            <whcg-chip>whcg-chip</whcg-chip>
-            <whcg-number-field label="thelabel" placeholder="theplaceholder"></whcg-number-field>
-            <whcg-search-box></whcg-search-box>
-            <whcg-button-box></whcg-button-box> -->
-            
-        </div>
-        <div class="right"></div>
-    </div>
     
 
 </body>
