@@ -22,7 +22,7 @@ html {
     --whcg-item-content-font-size: var(--parmaco-font-size-m);
     --whcg-item-content-line-height: var(--parmaco-line-height-xs);
     --whcg-item-content-color: var(--parmaco-black-color-50pct);
-    --whcg-item-content-host-selected-color: var(--parmaco-attention-color-100pct);
+    --whcg-item-content-host-selected-color: var(--parmaco-secondary-color-100pct);
     --whcg-item-content-host-disabled-color: var(--parmaco-black-color-30pct);
     
 
@@ -80,7 +80,7 @@ html {
 
     /* Selector */
     --whcg-tab-host-before-height: var(--parmaco-size-xs);
-    --whcg-tab-host-before-background-color: var(--parmaco-attention-color-100pct);
+    --whcg-tab-host-before-background-color: var(--parmaco-secondary-color-100pct);
     --whcg-tab-host-before-border-radius: 0 var(--parmaco-border-radius) var(--parmaco-border-radius) 0;
 
     /* CHECKBOX */
@@ -184,6 +184,7 @@ html {
     --whcg-button-label-padding-bottom: calc(var(--whcg-button-size) / 6);
     --whcg-button-label-padding-left: 0;
     --whcg-button-label-padding-right: 0;
+    --whcg-button-label-color: var(--parmaco-base-color-100pct);
 
 
 
@@ -245,6 +246,6 @@ html {
 
     /* dark theme */
     --whcg-text-field-input-field-host__dark-background-color: var(--parmaco-primary-color-100pct);
-    --whcg-text-field-label-host__dark-color: var(--parmaco-attention-color-100pct);
+    --whcg-text-field-label-host__dark-color: var(--parmaco-secondary-color-100pct);
     --whcg-text-field-value-host__dark-color: var(--parmaco-primary-contrast-color);
 }
