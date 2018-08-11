@@ -7,8 +7,7 @@ class WhcgSearchBox extends PolymerElement {
         return html `
         <style>
             :host {
-                padding: 20px;
-                background-color: red;
+
             }
         </style>
   
